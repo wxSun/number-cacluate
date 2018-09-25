@@ -26,7 +26,7 @@ license:  Hsinwang   2018.9.20
 *******************************************************************************/
     double  duoxiangshiqiuzhi   (double a[], int n,double x)
  {
-     int count;   // 计数器
+     int count=0;   // 计数器
      double out=a[n-1]; //  输出值，结果保存
 
         for (count=1;count<(n-1);count++)
