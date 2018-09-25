@@ -1,20 +1,22 @@
 
-
 /*
+
 # include <stdio.h>
 
-  double duoxiangshiqiuzhi (double a[], int n,double x);
+  double dxsqz  (double a[], int n,double x);
 
   int main(void )
 {
 
  double  m[4]= {1.655, 2.5, 3.33, 4.0};
- double p=duoxiangshiqiuzhi (m,4,4.05);
+ double p=dxsqz (m,4,4.05);
  printf("%lf\n", p);
-
+ return 0;
 }
 
 */
+
+
 
 /******************************************************************************
 input : a[]  多项式系数
@@ -24,7 +26,7 @@ output :
         多项式的值
 license:  Hsinwang   2018.9.20
 *******************************************************************************/
-    double  duoxiangshiqiuzhi   (double a[], int n,double x)
+    double  dxsqz (double a[], int n,double x)
  {
      int count=0;   // 计数器
      double out=a[n-1]; //  输出值，结果保存
