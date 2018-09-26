@@ -26,7 +26,7 @@ ARGUMENT    TYPE    I/O     DESCRIPTION   *
 -------     ----    ---     -----------   *
 a[]        double    I      多项式系数     *
 n          int       I      多项式阶数     *
-x          double    I      待求值      	*
+x          double    I      待求值         *
 
 RETURN :
 
@@ -35,7 +35,8 @@ ARGUMENT    TYPE    I/O     DESCRIPTION   *
 out         double   O      多项式的值     *
 
 
-license:  Hsinwang   2018.9.20
+change log: Hsinwang   2018.9.20   created  *
+                       2018.9.26   update   *
 *******************************************************************************/
 
 
