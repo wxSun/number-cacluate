@@ -1,4 +1,4 @@
-# #include <stdio.h>
+ #include <stdio.h>
 
 void qujian( double *left, double *right,int n);
 double main_func(double x);
