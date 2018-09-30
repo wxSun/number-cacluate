@@ -1,13 +1,35 @@
 function [ output] = qjeff( left, right ,delta )
-%UNTITLED 此处显示有关此函数的摘要
-%   此处显示详细说明
-middle = 0.0;
-middle = (left + right)/2;
-    while (abs(func(middle))>delta) 
-        
+%
+%
+%
+%
+%
+%
 
-
-    end
-
+while(func(left)*func(right)<0)
+      middle=(left+right)*0.5;
+      if(func(middle)*func(left)<0)
+          right = middle;
+      else
+          left = middle;
+      end
+            if (abs(middle-left)<=delta)
+                break;
+            end
+          
+end
+output = (left+right)*0.5;
 end
 
+
+
+function [ y] = func( x )
+%
+%
+%
+%
+%
+%
+%
+y= 1/3 * power(x,3) - x* power(x,2)+4 *x -4 ;
+end
