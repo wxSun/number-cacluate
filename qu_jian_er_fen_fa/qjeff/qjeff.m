@@ -5,22 +5,19 @@ function [ output] = qjeff( left, right ,delta )
 %
 %
 %
-
-while(func(left)*func(right)<0)
-      middle=(left+right)*0.5;
-      if(func(middle)*func(left)<0)
-          right = middle;
-      else
-          left = middle;
-      end
-            if (abs(middle-left)<=delta)
-                break;
-            end
-          
-end
-output = (left+right)*0.5;
+middle=(left+right)*0.5;
+while func(middle)>=delta
+    middle=(left+right)*0.5;
+    if func(left)*func(middle)<=0
+        right=middle;
+    else
+        left=middle;    
+    end
 end
 
+output = middle;
+
+end
 
 
 function [ y] = func( x )
@@ -31,5 +28,5 @@ function [ y] = func( x )
 %
 %
 %
-y= 1/3 * power(x,3) - x* power(x,2)+4 *x -4 ;
+y= 1.0/3 * power(x,3) -power(x,2)+4 *x -4 ;
 end

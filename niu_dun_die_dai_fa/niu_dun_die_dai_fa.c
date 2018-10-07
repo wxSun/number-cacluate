@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-
-
-
-
     int main( void )
 {
     double ndddf(double input , int n);
