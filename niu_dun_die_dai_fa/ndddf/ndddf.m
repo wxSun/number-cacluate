@@ -1,4 +1,4 @@
-function [out,count] = ndddf(input,n)
+function [out] = ndddf(input,n)
 %-----------------------------------------------------------------
 %   intput:
 %
@@ -18,8 +18,7 @@ for count = 1 : n
     x(count+1) = x(count) - (func(x(count)))/(func_dif(x(count)));
     count = count+ 1;
 end
-out = x(count);
-ans = [ out count]  %#ok<NOPRT>
+out= [ x(count) count-2]  %#ok<NOPRT>
 end
 
 

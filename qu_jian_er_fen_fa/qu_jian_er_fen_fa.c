@@ -1,13 +1,10 @@
  #include <stdio.h>
-
-void qujian( double *left, double *right,int n);
-double main_func(double x);
-double result (double left,double right, double delta);
-
+ #include <math.h>
 
 
  int main {
-
+            double main_func(double x);
+            double result (double left,double right, double delta);
 
 
 
@@ -18,51 +15,12 @@ return 0;
 
 
 
-/******************************************************************************
-FUNCTION NAME :   void qujian( double *left, double *right,int n)
-
-ARGUMENTS :
-
-ARGUMENT    TYPE    I/O     DESCRIPTION   *
--------     ----    ---     -----------   *
-*left       double   I      区间左端点     *
-*right      double   I      区间右端点     *
-n           int      I      精度分段数     *
-
-RETURN :
-
-ARGUMENT    TYPE    I/O     DESCRIPTION   *
--------     ----    ---     -----------   *
-            void     O                    *
-
-
-change log: Hsinwang   2018.9.26   created  *
-*******************************************************************************/
-
-void qujian( double *left, double *right,int n)
-{
-
-  int count = 0;
-  double step = 0.0;
-
-  step= (((*right) - (*left))/n);
-
-        for (count = (*left); count <= (*right); count++) {
-             if ((!(main_func((*left) + (count - (*left) * step ))) * (main_func((*left) + (count + 1 - (*left) * step ))) > 0) ) {
-                 (*left) = ((*left) + (count - (*left) * step ));
-                 (*right) = ((*left)+(count + 1 - (*left) * step ));
-             }
-        }
-}
 
 
 
 double main_func(double x)
 {
-
-
-
-
+    return(1.0/3*poW(x,3)-pow(x,2)+4*x-4);
 }
 
 
@@ -90,12 +48,10 @@ change log: Hsinwang   2018.9.26   created  *
 
 double result (double left,double right, double delta)
 {
-    double out = 0;
-    double middle = 0;
 
     double middle = ( left + right ) / 2;
 
-        while ( main_func(middle)>delta )
+        while ( abs(main_func(middle))>=delta )
               {
                         if ( main_func(left) > main_func(middle)) {
                                       left = middle ;
@@ -103,6 +59,5 @@ double result (double left,double right, double delta)
                                       right = middle ;
                                  }
               }
-    out = middle ;
-    return out;
+    return middle;
 }
