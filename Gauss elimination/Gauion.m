@@ -21,9 +21,9 @@ X = [ ];        % Gauss elimination method results
 % elimination process
 for k= 1:1:(n-1)
     for i=(k+1):1:(n)
-         for j=(k+1):1:n 
-            L(i,k) = A(i,k) / A(k,k);
-            b(i) = b(i) - L(i,k) * b(k);  
+        L(i,k) = A(i,k) / A(k,k);
+        b(i) = b(i) - L(i,k) * b(k);   
+        for j=(k+1):1:n 
             A(i,j) = A(i,j) - L(i,k) * A(k,j);
         end
     end
