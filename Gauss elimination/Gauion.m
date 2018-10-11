@@ -36,9 +36,10 @@ end
 %
 
 % backward process
+
 X(n) = b(n)/A(n,n);
+sum=0;    % sum of temporary variables
 for i= (n-1):-1:1
-    sum=0;    % sum of temporary variables
     for j=(i+1):1:n
         sum= sum + A(i,j) * X(j);
     end
