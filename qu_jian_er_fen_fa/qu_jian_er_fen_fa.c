@@ -30,17 +30,17 @@ FUNCTION NAME :    double  dxsqz (double a[], int n,double x)
 
 ARGUMENTS :
 
-ARGUMENT    TYPE    I/O     DESCRIPTION   *
--------     ----    ---     -----------   *
-left       double    I      左端点数值     *
-right      double    I      右端点数值     *
-delta      double    I      最大误差       *
+ARGUMENT    TYPE    I/O     DESCRIPTION             *
+-------     ----    ---     -----------             *
+left       double    I      The endpoint lvalue     *
+right      double    I      The endpoint rvalue     *
+delta      double    I      maximum error           *
 
 RETURN :
 
-ARGUMENT    TYPE    I/O     DESCRIPTION   *
--------     ----    ---     -----------   *
-out         double   O      计算结果       *
+ARGUMENT    TYPE    I/O     DESCRIPTION             *
+-------     ----    ---     -----------             *
+out         double   O      The calculation results *
 
 
 change log: Hsinwang   2018.9.26   created  *
@@ -58,6 +58,7 @@ double result (double left,double right, double delta)
                            }else {
                                       right = middle ;
                                  }
+              double middle = ( left + right ) / 2;
               }
     return middle;
 }

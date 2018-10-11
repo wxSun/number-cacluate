@@ -1,3 +1,5 @@
+/*
+
 #include <stdio.h>
 #include <math.h>
 
@@ -13,18 +15,28 @@
 
     return 0;
 }
+*/
 
-
-
-
-
-
-
-
-
-
-
-
+/*******************************************************************************
+*
+*FUNCTION NAME : double ndddf(double input , int n);
+*
+*ARGUMENTS:
+*
+*ARGUMENT       TYPE        I/O         DESCRIPTION           *
+*--------       ----        ---         ----------            *
+* input        double       I           set value
+*   n          int          I           Iterations
+*
+*RETURNs:
+*ARGUMENT       TYPE        I/O         DESCRIPTION           *
+*--------       ----        ---         ----------            *
+* output        double      O          The approximate zero   *
+*
+*DESCRIPTION :
+*            Newton iteration method for the numerical solution of the function
+*                                      HsinWang
+*******************************************************************************/
 double ndddf(double input , int n)
 {
     double x[ ]={0} ;
