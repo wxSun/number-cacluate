@@ -1,12 +1,12 @@
 void Gauion(double *A, double *b, int n,double *x )
 {
  int i=0;int j=0;int k=0;
- int *L = NULL;
+ //int *L = NULL;
  double sum=0.0;
  *A= malloc ((n*n) *sizeof(double));
  *b= malloc ((n*1) *sizeof(double));
  *x= malloc ((n*1) *sizeof(double));
- *L= malloc ((n*n) *sizeof(double));
+ L= malloc ((n*n) *sizeof(double));
 
     for ( k = 0; k < n; k++) {
         for(i=(k+1);i<(n+1);i++){
