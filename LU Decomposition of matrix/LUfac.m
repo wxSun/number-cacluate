@@ -1,17 +1,17 @@
 function [ output ] = LUfac( A , n)
 %  LU decomposition of matrix
 %{-----------------------------------------------------------------------------
-input :
-        nonsingular matrix(A)   n*n
-        Matrix dimensions (n)   int
-output:
-       upper triangular matrix(U)   n*n
-       lower triangular matrix(L)   n*n
-
-description :
-      LU decomposition for nonsingular matrices
-                                  HsinWang
------------------------------------------------------------------------------%}
+%input :
+%        nonsingular matrix(A)   n*n
+%        Matrix dimensions (n)   int
+%output:
+%       upper triangular matrix(U)   n*n
+%       lower triangular matrix(L)   n*n
+%
+%description :
+%      LU decomposition for nonsingular matrices
+%                                  HsinWang
+%-----------------------------------------------------------------------------%}
 % Variable Instantiation
 i=0;j=0;k=0;
 L=[]; U=[];

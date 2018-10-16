@@ -1,17 +1,17 @@
 function [ output] = Gauion(A,b,n)
 %Gauion coefficient matrix£¨ A £©£¬Non-homogeneous constant( b ),dimension ( n )
 %{------------------------------------------------------------------------------
-input :
-        Gauion coefficient matrix (A)       n*n
-        Non-homogeneous constant( b )       n*1
-        dimension ( n )                     int
-output :
-         X(output)                          n*1
-
-description :
-        The gauss elimination method is used to solve linear equations
-                                                 HsinWang  2018.10.11
-------------------------------------------------------------------------------%}
+%input :
+%        Gauion coefficient matrix (A)       n*n
+%        Non-homogeneous constant( b )       n*1
+%        dimension ( n )                     int
+%output :
+%         X(output)                          n*1
+%
+%description :
+%        The gauss elimination method is used to solve linear equations
+%                                                 HsinWang  2018.10.11
+%------------------------------------------------------------------------------%}
 
 i=0;j=0;k=0;    % Iterator initialization
 L = [ ];        % The intermediate matrix is initialized
