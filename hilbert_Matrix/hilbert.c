@@ -1,28 +1,16 @@
+#define  row  4
+#define  col  4
 #include <stdio.h>
 int main()
 {
-  void hilbert(double *p,int n);
-  double a[]={0};
-
-  hilbert(a[],4);
-
+    double A [row][col]={0};
+    int i_count=0; int j_count=0; int n=4;
+    for(i_count=0;i_count<n;i_count++){
+        for(j_count=0;i_count<n;j_count++){
+            A [row][col]=1.0/(i_count+j_count-1.0);
+            printf("%lf\n",A [row][col]);
+        }
+    }
 
     return 0;
-}
-
-
-
-
-
-
-void hilbert(double p[],int n)
-{
-  int i=0; int j=0;//Iterator initialization
-  for(i=0;i<n;i++)
-      for(j=0;j<n;j++){
-          p[i][j]=1/i+j;//Matrix element assignment
-          printf("%f\n",p[i][j] );
-      }
-return;
-
 }
