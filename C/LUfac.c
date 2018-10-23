@@ -2,9 +2,6 @@ void Lufac(double A[],int n,double L[],double U[])
 {
  int i=0;int j=0;int k=0;
 
-*A= malloc ((n*n) *sizeof(double));
-*L= malloc ((n*n) *sizeof(double));
-*U= malloc ((n*n) *sizeof(double));
 
      for(i=0;i<n;i++){
          for(j=0;j<n;j++){
@@ -36,5 +33,3 @@ double suml=0.0;
         }
     }
 }
-
-free(A);

@@ -1,12 +1,3 @@
-/*
-#include <stdio.h>
- int main(int argc, char const *argv[]) {
-    long int zshf(int n,int m);
-    printf("%ld \n",zshf(99,99 ));
-    return 0;
-}
-*/
-
 
 
 
