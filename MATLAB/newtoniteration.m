@@ -1,4 +1,4 @@
-function [out] = ndddf(input,n)
+function [out] = newtoniteration(input,n)
 %-------------------------------------------------------------------------------
 %   intput:
 %

@@ -15,7 +15,7 @@ for k = 1: max1
     P = Q;
     Y = Z;
     iter = k;
-    if (err<tol) |(relerr<tol) | (abs(Y)<epsilon)
+    if (err<tol) ||(relerr<tol) || (abs(Y)<epsilon)
         break;
     end
 end

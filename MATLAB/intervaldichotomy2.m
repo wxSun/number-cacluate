@@ -1,4 +1,4 @@
-function [ output] = qjeff( left, right ,delta )
+function [ output] = intervaldichotomy2( left, right ,delta )
 %
 %
 %

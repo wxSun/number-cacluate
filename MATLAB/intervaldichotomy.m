@@ -1,4 +1,4 @@
-function [ output] = qjeff( left, right ,delta )
+function [ output] = intervaldichotomy( left, right ,delta )
 % input
 %      (left,right)  ______ computation interval
 %       delta        ______ accuracy

@@ -1,5 +1,5 @@
-function [ output] = cholesky( A,n )
-%CHOLESKY 
+function [ output] = choleskydecomposition( A,n )
+%choleskydecomposition 
 %  
 %
 %

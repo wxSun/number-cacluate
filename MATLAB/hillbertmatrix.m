@@ -1,4 +1,4 @@
-function [ output ] = hilbert( n )
+function [ output ] = hillbertmatrix( n )
 %
 %
 %
