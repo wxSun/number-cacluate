@@ -1,4 +1,4 @@
-function [ output ] = spline3( x,y,g )
+function [ output ] = threenaturalsplineinterpolation( x,y,g )
 %SPLINE3 
 %--------------------------------------------------------------------------   
 %
@@ -43,7 +43,7 @@ mA(1,1)=1; mA(n,n)=1;
     for i=2:n-1
         mb(i)=3*(delta(i)/delt(i)-delta(i-1)/delt(i-1));
     end
-c=mA\mb; %%%%%%%%%%%%%%%%
+c=mA\mb; %%
 %
     for i=1:n-1
         d(i)=(c(i+1)-c(i))/(3.0*delt(i));
