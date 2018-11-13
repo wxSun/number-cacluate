@@ -1,5 +1,5 @@
 function [ output ] = threenaturalsplineinterpolation( x,y,g )
-%SPLINE3 
+%threenaturalsplineinterpolation
 %--------------------------------------------------------------------------   
 %
 %

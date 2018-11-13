@@ -1,6 +1,6 @@
 function [out] = newtoniteration(input,n)
-%-------------------------------------------------------------------------------
-%   intput:
+% 
+%intput:
 %
 %        double      input
 %         int        n
