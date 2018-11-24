@@ -1,4 +1,11 @@
 function [result] = AdaptiveStepIntegral(x_LowBound,x_UpBound,accuracyValue)
+%
+%
+%
+%
+%
+%
+%
 f_0 = CalcuFunctionValue(x_LowBound);
 f_1 = CalcuFunctionValue(x_UpBound);
 step_length = x_UpBound - x_LowBound;

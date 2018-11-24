@@ -1,4 +1,4 @@
-function [ output ] = lagrangianinterpolationpolynomial(U,V,x)
+function [ output ] = LagrangianInterpolationPolynomial(U,V,x)
 %lagrangianinterpolationpolynomial
 %-------------------------------------------------------------------------- 
 %input

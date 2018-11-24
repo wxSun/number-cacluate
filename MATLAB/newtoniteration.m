@@ -1,4 +1,4 @@
-function [out] = newtoniteration(input,n)
+function [out] = NewtonIteration(input,n)
 % 
 %intput:
 %

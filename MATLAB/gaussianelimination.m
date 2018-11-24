@@ -1,10 +1,9 @@
-function [ output] = gaussianelimination(A,b,n)
-%Gauion coefficient matrix A Non-homogeneous constant( b ),dimension ( n )
+function [ output] = GaussianeLimination(A,b)
+% Gauion coefficient matrix A, Non-homogeneous constant( b )
 %{-------------------------------------------------------------------------
 %input :
 %        Gauion coefficient matrix (A)       n*n
 %        Non-homogeneous constant( b )       n*1
-%        dimension ( n )                     int
 %output :
 %         X(output)                          n*1
 %
@@ -12,7 +11,7 @@ function [ output] = gaussianelimination(A,b,n)
 %        The gauss elimination method is used to solve linear equations
 %                                                 HsinWang  2018.10.11
 %-------------------------------------------------------------------------%}
-
+n=length(b);
 i=0;j=0;k=0;    % Iterator initialization
 L = [ ];        % The intermediate matrix is initialized
 X = [ ];        % Gauss elimination method results

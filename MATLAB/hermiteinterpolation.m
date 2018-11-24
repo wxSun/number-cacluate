@@ -1,4 +1,4 @@
-function [ output ] = hermiteinterpolation( U,V,DV,x )
+function [ output ] = HermiteInterpolation( U,V,DV,x )
 %HERMITEINTERPOLATION
 %--------------------------------------------------------------------------   
 %input

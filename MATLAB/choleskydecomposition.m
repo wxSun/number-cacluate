@@ -1,4 +1,4 @@
-function [ output] = choleskydecomposition( A,n )
+function [ output] = CholeskyDecomposition( A,n )
 %choleskydecomposition 
 %  
 %

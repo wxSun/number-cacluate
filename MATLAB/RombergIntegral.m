@@ -1,4 +1,4 @@
-function [ out ] = Romberg( f,a,b,eps )
+function [ out ] = RombergIntegral( f,a,b,eps )
 %
 %
 %

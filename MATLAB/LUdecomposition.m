@@ -1,4 +1,4 @@
-function [ output ] = LUdecomposition( A , n)
+function [ output ] = LUDecomposition( A , n)
 %  LU decomposition of matrix
 %{-----------------------------------------------------------------------------
 %input :
