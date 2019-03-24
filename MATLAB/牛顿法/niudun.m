@@ -1,4 +1,17 @@
 function [ output ] = niudun( a,b,delt,fdy,fdydy )
+% Å£¶ÙÇÐÏß·½·¨ Newton tangent method
+%{-----------------------------------------------------------------------------
+%input :
+%        (a,b) Interpolation search interval    double
+%        delt Precision                        double
+%        fdy  Function first derivative        function handle
+%        fdydy Function second derivative      function handle
+%output:
+%         output  Optimal solution              double
+%description :
+%         Newton tangent method for optimal solution
+%                                  HsinWang
+%-----------------------------------------------------------------------------%}
 x(1)=(a+b)./2;
 x(2)=x(1)-(fdy(x(1))./(fdydy(x(1))));
 k=2;

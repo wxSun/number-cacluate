@@ -1,4 +1,15 @@
 function [ output ] = waituifa(f,h0)
+%  ÍâÍÆ·¨ Extrapolation
+%{-----------------------------------------------------------------------------
+%input :
+%        f     Interpolated function           function handle
+%         h    Interpolation direction          h>0 || h<0           double
+%output:
+%         output  One-dimensional search interval high-low-high   M [1*6]
+%description :
+%      Extrapolation method for one-dimensional search interval
+%                                  HsinWang
+%-----------------------------------------------------------------------------%}
 x1=0;h=h0;y1=f(x1);x2=h;y2=f(x2);
     if  y2>y1
         h=-h;x3=-x1;y3=y1;

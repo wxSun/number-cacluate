@@ -1,4 +1,17 @@
 function [ output] = ercichazhifa( f,a,b,h,delt )
+%  二次插值法 Quadratic interpolation method
+%{-----------------------------------------------------------------------------
+%input :
+%        f     Interpolated function           function handle
+%        (a,b) Interpolation search interval    double
+%         h    Interpolation direction          h>0 || h<0
+%         delt Precision                        double
+%output:
+%         output  Optimal solution and its function value   M [1*2]
+%description :
+%      Quadratic interpolation method to find the minimum point
+%                                  HsinWang
+%-----------------------------------------------------------------------------%}
 x1=a;x2=(a+b)./2;x3=b;
 y1=f(x1);y2=f(x2);y3=f(x3);
 c1=(y3-y1)./(x3-x1);
